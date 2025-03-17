@@ -581,22 +581,22 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
             ),
           ),
         ),
-        Align(
-          alignment: Alignment.centerRight,
-          child: SizedBox(
-            width: size.width,
-            height: size.height,
-            child: GestureDetector(
-              key: ValueKey('$currentIndex'),
-              onLongPressDown: (details) => _pauseMedia(),
-              onLongPressUp: _resumeMedia,
-              onLongPressEnd: (details) => _resumeMedia(),
-              onLongPressCancel: _resumeMedia,
-              onVerticalDragStart: widget.onSlideStart?.call,
-              onVerticalDragUpdate: widget.onSlideDown?.call,
-            ),
-          ),
-        ),
+        // Align(
+        //   alignment: Alignment.centerRight,
+        //   child: SizedBox(
+        //     width: size.width,
+        //     height: size.height,
+        //     child: GestureDetector(
+        //       key: ValueKey('$currentIndex'),
+        //       onLongPressDown: (details) => _pauseMedia(),
+        //       onLongPressUp: _resumeMedia,
+        //       onLongPressEnd: (details) => _resumeMedia(),
+        //       onLongPressCancel: _resumeMedia,
+        //       onVerticalDragStart: widget.onSlideStart?.call,
+        //       onVerticalDragUpdate: widget.onSlideDown?.call,
+        //     ),
+        //   ),
+        // ),
         if (widget.headerWidget != null) ...{
           Align(
             alignment: Alignment.topCenter,

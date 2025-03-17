@@ -563,8 +563,7 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
         ),
         Align(
           alignment: Alignment.centerLeft,
-          child: Container(
-            color: Colors.red,
+          child: SizedBox(
             width: size.width * .1,
             height: size.height * .1,
             child: GestureDetector(
@@ -574,8 +573,7 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
         ),
         Align(
           alignment: Alignment.centerRight,
-          child: Container(
-            color: Colors.red,
+          child: SizedBox(
             width: size.width * .1,
             height: size.height * .1,
             child: GestureDetector(

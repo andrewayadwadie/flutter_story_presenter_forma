@@ -360,9 +360,7 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
         currentIndex != (widget.items.length - 1)) {
       /// Dispose the video player only in case of multiple story
       isCurrentItemLoaded = false;
-      setState(() {
-
-      });
+      setState(() {});
       _currentVideoPlayer?.removeListener(videoListener);
       _currentVideoPlayer?.dispose();
       _currentVideoPlayer = null;
@@ -445,13 +443,11 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
               onLoaded: () {
                 isCurrentItemLoaded = true;
                 _startStoryCountdown();
-
               },
               onAudioLoaded: (audioPlayer) {
                 isCurrentItemLoaded = true;
                 _audioPlayer = audioPlayer;
                 _startStoryCountdown();
-
               },
             ),
           ),
@@ -567,9 +563,10 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
         ),
         Align(
           alignment: Alignment.centerLeft,
-          child: SizedBox(
+          child: Container(
+            color: Colors.red,
             width: size.width * .2,
-            height: size.height,
+            height: size.height * .2,
             child: GestureDetector(
               onTap: _playPrevious,
             ),
@@ -577,9 +574,10 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
         ),
         Align(
           alignment: Alignment.centerRight,
-          child: SizedBox(
+          child: Container(
+            color: Colors.red,
             width: size.width * .2,
-            height: size.height,
+            height: size.height * .2,
             child: GestureDetector(
               onTap: _playNext,
             ),

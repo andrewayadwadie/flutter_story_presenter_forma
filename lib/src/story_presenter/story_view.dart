@@ -565,8 +565,8 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
           alignment: Alignment.centerLeft,
           child: Container(
             color: Colors.red,
-            width: size.width * .2,
-            height: size.height * .2,
+            width: size.width * .1,
+            height: size.height * .1,
             child: GestureDetector(
               onTap: _playPrevious,
             ),
@@ -576,8 +576,8 @@ class _FlutterStoryPresenterState extends State<FlutterStoryPresenter>
           alignment: Alignment.centerRight,
           child: Container(
             color: Colors.red,
-            width: size.width * .2,
-            height: size.height * .2,
+            width: size.width * .1,
+            height: size.height * .1,
             child: GestureDetector(
               onTap: _playNext,
             ),
